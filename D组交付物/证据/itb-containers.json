@@ -1,0 +1,146 @@
+[
+  {
+    "Command": "\"/usr/local/bin/gitb…\"",
+    "CreatedAt": "2026-11-17 21:15:48 +0800 CST",
+    "ExitCode": 0,
+    "Health": "healthy",
+    "ID": "f1249f89b091",
+    "Image": "isaitb/gitb-mysql",
+    "Labels": "com.docker.compose.depends_on=,com.docker.compose.image=sha256:33fed07687b91d0ce8eb65a6d60ba637239adede2d2414151e71aaff39fcd7a2,com.docker.compose.project=tide-d-w1w4,com.docker.compose.project.config_files=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB\\compose.yaml,desktop.docker.io/ports.scheme=v2,com.docker.compose.config-hash=ac568adeb0b4c3f25a1b1cb5dd73ae108e8cf5f235aea03c5fdfcfa9f37bb4ef,com.docker.compose.container-number=1,com.docker.compose.oneoff=False,com.docker.compose.project.working_dir=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB,com.docker.compose.service=gitb-mysql,com.docker.compose.version=5.1.4",
+    "LocalVolumes": "1",
+    "Mounts": "tide-d-w1w4_db…",
+    "Name": "tide-d-w1w4-gitb-mysql-1",
+    "Names": "tide-d-w1w4-gitb-mysql-1",
+    "Networks": "tide-d-w1w4_default",
+    "Ports": "3306/tcp, 33060/tcp",
+    "Project": "tide-d-w1w4",
+    "Publishers": [
+      {
+        "URL": "",
+        "TargetPort": 3306,
+        "PublishedPort": 0,
+        "Protocol": "tcp"
+      },
+      {
+        "URL": "",
+        "TargetPort": 33060,
+        "PublishedPort": 0,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "22 minutes ago",
+    "Service": "gitb-mysql",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 22 minutes (healthy)"
+  },
+  {
+    "Command": "\"docker-entrypoint.s…\"",
+    "CreatedAt": "2026-11-17 21:15:48 +0800 CST",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "cee04d9077d8",
+    "Image": "isaitb/gitb-redis",
+    "Labels": "com.docker.compose.project=tide-d-w1w4,com.docker.compose.project.config_files=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB\\compose.yaml,com.docker.compose.project.working_dir=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB,com.docker.compose.service=gitb-redis,com.docker.compose.config-hash=3602706589b4d4c054b83dd1f0ecac845f886ac2644ba8c42156dbc63246167a,com.docker.compose.depends_on=,com.docker.compose.image=sha256:644364cce498f6b7666b27aeca89157660341dcd032da66185b4ac2c0ed1bcb8,com.docker.compose.oneoff=False,com.docker.compose.version=5.1.4,desktop.docker.io/ports.scheme=v2,com.docker.compose.container-number=1",
+    "LocalVolumes": "1",
+    "Mounts": "8fba26a6d17cbb…",
+    "Name": "tide-d-w1w4-gitb-redis-1",
+    "Names": "tide-d-w1w4-gitb-redis-1",
+    "Networks": "tide-d-w1w4_default",
+    "Ports": "6379/tcp",
+    "Project": "tide-d-w1w4",
+    "Publishers": [
+      {
+        "URL": "",
+        "TargetPort": 6379,
+        "PublishedPort": 0,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "22 minutes ago",
+    "Service": "gitb-redis",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 22 minutes"
+  },
+  {
+    "Command": "\"java -Djava.securit…\"",
+    "CreatedAt": "2026-11-17 21:15:48 +0800 CST",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "16286eed3809",
+    "Image": "isaitb/gitb-srv:1.30.3",
+    "Labels": "com.docker.compose.oneoff=False,com.docker.compose.project.config_files=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB\\compose.yaml,com.docker.compose.project.working_dir=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB,com.docker.compose.version=5.1.4,desktop.docker.io/ports/8080/tcp=127.0.0.1:18080,org.opencontainers.image.version=22.04,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.project=tide-d-w1w4,com.docker.compose.service=gitb-srv,desktop.docker.io/ports.scheme=v2,com.docker.compose.config-hash=ec6881e135aa4cefd0722bdf2242c85e8a0cac1ad9c1a66251410c7eebfe79f9,com.docker.compose.image=sha256:15f3285c081562429312661d4ab9c1c2c5d0af35f76f1f73ac8bbf0a032e9538",
+    "LocalVolumes": "0",
+    "Mounts": "",
+    "Name": "tide-d-w1w4-gitb-srv-1",
+    "Names": "tide-d-w1w4-gitb-srv-1",
+    "Networks": "tide-d-w1w4_default",
+    "Ports": "127.0.0.1:18080->8080/tcp",
+    "Project": "tide-d-w1w4",
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 8080,
+        "PublishedPort": 18080,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "22 minutes ago",
+    "Service": "gitb-srv",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 22 minutes"
+  },
+  {
+    "Command": "\"/usr/local/gitb-ui/…\"",
+    "CreatedAt": "2026-11-17 21:15:49 +0800 CST",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "3548e122d41b",
+    "Image": "isaitb/gitb-ui:1.30.3",
+    "Labels": "desktop.docker.io/ports.scheme=v2,com.docker.compose.depends_on=gitb-srv:service_started:false,gitb-redis:service_started:false,gitb-mysql:service_healthy:false,com.docker.compose.oneoff=False,com.docker.compose.project.working_dir=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB,desktop.docker.io/ports/9000/tcp=127.0.0.1:19000,org.opencontainers.image.version=22.04,com.docker.compose.config-hash=1e4c59bec43b96f70686ef4d66a627a859e63264e72b9012c7ecad0c87ed81cb,com.docker.compose.container-number=1,com.docker.compose.image=sha256:a721b36ed2c408839b4c15499878e254024c368c6de61259ebab69b05979b848,com.docker.compose.project=tide-d-w1w4,com.docker.compose.project.config_files=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB\\compose.yaml,com.docker.compose.service=gitb-ui,com.docker.compose.version=5.1.4",
+    "LocalVolumes": "1",
+    "Mounts": "tide-d-w1w4_re…",
+    "Name": "tide-d-w1w4-gitb-ui-1",
+    "Names": "tide-d-w1w4-gitb-ui-1",
+    "Networks": "tide-d-w1w4_default",
+    "Ports": "127.0.0.1:19000->9000/tcp",
+    "Project": "tide-d-w1w4",
+    "Publishers": [
+      {
+        "URL": "127.0.0.1",
+        "TargetPort": 9000,
+        "PublishedPort": 19000,
+        "Protocol": "tcp"
+      }
+    ],
+    "RunningFor": "22 minutes ago",
+    "Service": "gitb-ui",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 21 minutes"
+  },
+  {
+    "Command": "\"python server.py\"",
+    "CreatedAt": "2026-11-17 21:34:13 +0800 CST",
+    "ExitCode": 0,
+    "Health": "",
+    "ID": "3549d770b5c2",
+    "Image": "tide-d-w1w4-validator-bridge",
+    "Labels": "desktop.docker.io/binds/1/SourceKind=hostFile,com.docker.compose.image=sha256:afbe62c588faf4f16178ccc97d93e13ef3a405bbd18e1e5dd3ac8dc8e51f42ee,com.docker.compose.project.config_files=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB\\compose.yaml,com.docker.compose.version=5.1.4,desktop.docker.io/binds/0/Target=/rules,desktop.docker.io/binds/1/Source=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\证据\\validator-bridge,desktop.docker.io/binds/1/Target=/evidence,desktop.docker.io/ports.scheme=v2,desktop.docker.io/binds/0/SourceKind=hostFile,com.docker.compose.config-hash=e3d92e002dd7474f282d9900659606bb7470b0f8d3142ef049da245abf814872,com.docker.compose.oneoff=False,com.docker.compose.container-number=1,com.docker.compose.depends_on=,com.docker.compose.project=tide-d-w1w4,com.docker.compose.project.working_dir=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\ITB,com.docker.compose.replace=validator-bridge-1,com.docker.compose.service=validator-bridge,desktop.docker.io/binds/0/Source=E:\\data space\\TIDE_Project_Requirements\\TIDE_Project_Requirements\\D组交付物\\inputs\\schemas",
+    "LocalVolumes": "0",
+    "Mounts": "/run/desktop/m…,/run/desktop/m…",
+    "Name": "tide-d-w1w4-validator-bridge-1",
+    "Names": "tide-d-w1w4-validator-bridge-1",
+    "Networks": "tide-d-w1w4_default",
+    "Ports": "",
+    "Project": "tide-d-w1w4",
+    "Publishers": [],
+    "RunningFor": "3 minutes ago",
+    "Service": "validator-bridge",
+    "Size": "0B",
+    "State": "running",
+    "Status": "Up 3 minutes"
+  }
+]

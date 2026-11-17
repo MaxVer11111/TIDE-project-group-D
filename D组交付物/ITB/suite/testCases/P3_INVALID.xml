@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase id="P3_INVALID" xmlns="http://www.gitb.com/tdl/v1/" xmlns:gitb="http://www.gitb.com/core/v1/"><metadata><gitb:name>P3_INVALID</gitb:name><gitb:version>1.0.1</gitb:version><gitb:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</gitb:description></metadata>
+<imports><artifact name="data">resources/examples/recipe-invalid.json</artifact><artifact name="schema">resources/schemas/recipe.schema.json</artifact><artifact name="responseSchema">resources/P3_INVALID-response.schema.json</artifact></imports><actors><gitb:actor id="TIDEProvider" name="TIDEProvider" role="SUT"/><gitb:actor id="TestDriver" name="TestDriver" role="SIMULATED"/></actors><steps stopOnError="true"><assign to="headers{Content-Type}">"application/json"</assign>
+<assign to="headers{X-TIDE-Session}">$SESSION{sessionId}</assign>
+<send id="validateHttp" from="TestDriver" to="TIDEProvider" handler="HttpMessagingV2" desc="Actual Python JSON Schema adapter">
+<input name="uri">"http://validator-bridge:8081/validate/recipe"</input><input name="method">"POST"</input>
+<input name="body">$data</input><input name="headers">$headers</input></send>
+<verify handler="ExpressionValidator" desc="Require successful validator execution">
+<input name="expression">number($validateHttp{response}{status}) = 200</input></verify>
+<verify handler="JsonValidator" desc="Assert exact conforms and violation reasons">
+<input name="json">$validateHttp{response}{body}</input><input name="schema">$responseSchema</input></verify></steps></testcase>

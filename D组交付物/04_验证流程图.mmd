@@ -1,0 +1,16 @@
+flowchart TD
+    C[既有C组场景样例 / 规则1.0.0] --> H[原文件hash与工具版本记录]
+    H --> J[JSON Schema 实际验证]
+    H --> S[JSON-LD → RDF → SHACL 实际验证]
+    J --> R[原始错误路径 / focus node / path / message]
+    S --> R
+    R --> E[预期与实际对比 / ERROR单独记录]
+    E --> P[本地证据目录]
+    R --> M[Mock准入：内容与规则hash绑定]
+    M --> A[Mock发布表：允许写入或拒绝且保持原值]
+    B[既有Grant样例 + 明确模拟成员状态] --> G[Mock资格 / 成员 / 范围 / 时间判定]
+    G --> P
+    C --> T[TDL Suite：8个样例用例]
+    T --> I[真实ITB：导入与Session需单独验证]
+    I --> P
+    P --> F[后续对接A/B真实服务，不能以mock代验收]

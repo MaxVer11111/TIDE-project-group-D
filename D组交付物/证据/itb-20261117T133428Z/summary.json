@@ -1,0 +1,55 @@
+{
+  "native_itb_version": "1.30.3",
+  "fixture_scope_only": true,
+  "suite_sha256": "ac1b88138ba1ade317a5e7cc622791cf26ffb0507c0657961ed455d2e603fa9b",
+  "sessions": [
+    {
+      "session": "6a02c81d-2d85-43ef-963f-f3bafc6f4f7f",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    },
+    {
+      "session": "6c3585d4-665a-4f42-944d-8437337a9232",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:29"
+    },
+    {
+      "session": "81d448a5-bb10-4615-b74d-21025a1003f3",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    },
+    {
+      "session": "aa3d237f-9bd2-4d14-b853-493d71694074",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    },
+    {
+      "session": "ad2df6cc-f054-4563-9aa4-776338d0ff41",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    },
+    {
+      "session": "c4a25c3e-34aa-408b-a664-0384bb8ab79d",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    },
+    {
+      "session": "fd0e403a-c1c1-4b4b-874c-ee4df738268e",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    },
+    {
+      "session": "ff00351a-ab58-4d26-a62d-8664232d90f6",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:34:29",
+      "endTime": "17/11/2026 13:34:30"
+    }
+  ]
+}

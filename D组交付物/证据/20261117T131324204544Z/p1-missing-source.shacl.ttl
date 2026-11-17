@@ -1,0 +1,19 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix tide: <https://example.invalid/tide/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <urn:tide:resource:p1:v1> ;
+            sh:resultMessage "source: required or invalid value" ;
+            sh:resultPath tide:source ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:MinCountConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:maxCount 1 ;
+                    sh:message "source: required or invalid value" ;
+                    sh:minCount 1 ;
+                    sh:minLength 1 ;
+                    sh:path tide:source ] ] .
+

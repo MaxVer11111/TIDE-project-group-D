@@ -1,0 +1,10 @@
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in InConstraintComponent (http://www.w3.org/ns/shacl#InConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:datatype xsd:string ; sh:in ( Literal("PUBLIC") Literal("PROJECT") Literal("RESTRICTED") ) ; sh:maxCount Literal("1", datatype=xsd:integer) ; sh:message Literal("access_level: required or invalid value") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:minLength Literal("1", datatype=xsd:integer) ; sh:path tide:access_level ]
+	Focus Node: <urn:tide:resource:p1:v1>
+	Value Node: Literal("EVERYONE")
+	Result Path: tide:access_level
+	Message: access_level: required or invalid value

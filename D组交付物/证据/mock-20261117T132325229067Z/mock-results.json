@@ -1,0 +1,222 @@
+[
+  {
+    "case": "TC01 合格P1模拟发布",
+    "expected": "PUBLISHED",
+    "actual": "PUBLISHED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC01 p1-missing-rights",
+    "expected": "CONTENT_INVALID",
+    "actual": "CONTENT_INVALID",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC01 错误发布不更新 p1-missing-rights",
+    "expected": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "actual": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC01 p1-missing-source",
+    "expected": "CONTENT_INVALID",
+    "actual": "CONTENT_INVALID",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC01 错误发布不更新 p1-missing-source",
+    "expected": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "actual": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC01 p1-invalid-access",
+    "expected": "CONTENT_INVALID",
+    "actual": "CONTENT_INVALID",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC01 错误发布不更新 p1-invalid-access",
+    "expected": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "actual": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "D2 更换metadata后旧报告失效",
+    "expected": "STALE_REPORT",
+    "actual": "STALE_REPORT",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "D2 不同规则hash报告失效",
+    "expected": "STALE_REPORT",
+    "actual": "STALE_REPORT",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "D2 Validator不可用不发布",
+    "expected": "VALIDATOR_UNAVAILABLE",
+    "actual": "VALIDATOR_UNAVAILABLE",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "D2 故障后内容未改变",
+    "expected": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "actual": "f07fa1586f05465d282c54d74570b57d503149e8672f333b7b678724ccc39d67",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02 有模拟资格但无Grant",
+    "expected": "GRANT_REQUIRED",
+    "actual": "GRANT_REQUIRED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02 申请人自批",
+    "expected": "OWNER_REQUIRED",
+    "actual": "OWNER_REQUIRED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02 模拟owner批准",
+    "expected": "MOCK_APPROVED",
+    "actual": "MOCK_APPROVED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02 模拟批准后允许",
+    "expected": "ALLOW",
+    "actual": "ALLOW",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02/03 错误资源",
+    "expected": "SCOPE_DENIED",
+    "actual": "SCOPE_DENIED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02/03 错误动作",
+    "expected": "SCOPE_DENIED",
+    "actual": "SCOPE_DENIED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02/03 错误用途",
+    "expected": "SCOPE_DENIED",
+    "actual": "SCOPE_DENIED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02/03 错误个人",
+    "expected": "SCOPE_DENIED",
+    "actual": "SCOPE_DENIED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02/03 错误项目",
+    "expected": "SCOPE_DENIED",
+    "actual": "SCOPE_DENIED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC03 退出个人",
+    "expected": "MEMBERSHIP_INACTIVE",
+    "actual": "MEMBERSHIP_INACTIVE",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC02 无模拟资格",
+    "expected": "QUALIFICATION_INVALID",
+    "actual": "QUALIFICATION_INVALID",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC07 到期边界",
+    "expected": "GRANT_EXPIRED",
+    "actual": "GRANT_EXPIRED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC07 模拟收回",
+    "expected": "GRANT_REVOKED",
+    "actual": "GRANT_REVOKED",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC09 判定故障",
+    "expected": "AUTHORIZATION_UNAVAILABLE",
+    "actual": "AUTHORIZATION_UNAVAILABLE",
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": null
+  },
+  {
+    "case": "TC06 派生负例标签作输入",
+    "expected": true,
+    "actual": true,
+    "status": "PASS",
+    "mode": "IN_PROCESS_MOCK",
+    "detail": [
+      {
+        "path": "$.feature_fields[0]",
+        "keyword": "enum",
+        "message": "'target_temp' is not one of ['control_input', 'flow_rate', 'temperature']",
+        "schema_path": [
+          "properties",
+          "feature_fields",
+          "items",
+          "enum"
+        ]
+      }
+    ]
+  }
+]

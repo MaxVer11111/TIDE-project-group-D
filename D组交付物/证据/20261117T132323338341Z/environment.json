@@ -1,0 +1,10 @@
+{
+  "time_utc": "20261117T132323338341Z",
+  "python": "3.13.7",
+  "packages": {
+    "pyshacl": "0.40.2",
+    "rdflib": "7.6.0",
+    "jsonschema": "4.26.0"
+  },
+  "scope": "real local content validation on supplied synthetic fixtures; NOT ITB or EDC"
+}

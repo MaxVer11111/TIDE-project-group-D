@@ -1,0 +1,12 @@
+{
+  "decision": "ALLOW",
+  "code": "CONTENT_OK",
+  "resource_id": "tide-p1-process-v1",
+  "product_version": "1.0.0",
+  "metadata_sha256": "aac60ab6f3cd20782b20123269e2b2d752de0d2ee7795a09f534459d4b4839da",
+  "rules": {
+    "schemas/metadata.schema.json": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "shapes/resource-core-v1.ttl": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f"
+  },
+  "errors": []
+}

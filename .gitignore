@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+TIDE_Minimal_Research_Scenario/data/restricted/*.csv

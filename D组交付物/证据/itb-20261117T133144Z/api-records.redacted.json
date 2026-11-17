@@ -1,0 +1,60 @@
+[
+  {
+    "method": "PUT",
+    "path": "/domain",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/community",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/specification",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/organisation",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/system",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/testsuite/deploy",
+    "status": 200,
+    "response": {
+      "completed": false,
+      "errors": [
+        {
+          "description": "[TDL-011] Test case [P3_VALID] references an actor by ID [TestDriver] that is not defined in the test suite.",
+          "location": "/testCases/P3_VALID.xml"
+        },
+        {
+          "description": "[TDL-011] Test case [P3_INVALID] references an actor by ID [TestDriver] that is not defined in the test suite.",
+          "location": "/testCases/P3_INVALID.xml"
+        }
+      ]
+    }
+  }
+]

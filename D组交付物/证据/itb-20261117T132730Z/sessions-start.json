@@ -1,0 +1,52 @@
+{
+  "createdSessions": [
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P1_VALID",
+      "session": "7665e47b-a920-4d05-9fb6-44972410d495",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P1_MISSING_RIGHTS",
+      "session": "d6f2dda7-7236-47c7-9ee0-228ea02bf357",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P1_MISSING_SOURCE",
+      "session": "1d2f9b94-8920-4abe-8e25-32960c6f9aee",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P1_BAD_ACCESS",
+      "session": "94feac33-d9f9-466a-81fc-1aca24790f90",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P3_VALID",
+      "session": "2816551d-d969-4969-b986-c469ae42ace6",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P3_INVALID",
+      "session": "94f4bb46-1261-489b-84d2-d8dc5a3019d9",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P4_VALID_FIXTURE",
+      "session": "8a958623-1482-49e4-8459-f007ecc9ee94",
+      "completed": false
+    },
+    {
+      "testSuite": "TIDE_D_W1W4",
+      "testCase": "P4_LEAK",
+      "session": "31e8a09d-4362-4598-8faf-1e46fcba3f04",
+      "completed": false
+    }
+  ]
+}

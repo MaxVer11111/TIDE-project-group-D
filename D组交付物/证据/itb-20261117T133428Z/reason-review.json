@@ -1,0 +1,86 @@
+[
+  {
+    "test_case": "P1_VALID",
+    "native_session": "6c3585d4-665a-4f42-944d-8437337a9232",
+    "review": "PASS",
+    "native_error_descriptions": []
+  },
+  {
+    "test_case": "P1_MISSING_RIGHTS",
+    "native_session": "6a02c81d-2d85-43ef-963f-f3bafc6f4f7f",
+    "review": "PASS",
+    "native_error_descriptions": [
+      "Missing required property 'rights_holder'.",
+      "rights_holder: required or invalid value"
+    ]
+  },
+  {
+    "test_case": "P1_MISSING_SOURCE",
+    "native_session": "ad2df6cc-f054-4563-9aa4-776338d0ff41",
+    "review": "PASS",
+    "native_error_descriptions": [
+      "Missing required property 'source'.",
+      "source: required or invalid value"
+    ]
+  },
+  {
+    "test_case": "P1_BAD_ACCESS",
+    "native_session": "81d448a5-bb10-4615-b74d-21025a1003f3",
+    "review": "PASS",
+    "native_error_descriptions": [
+      "[/access_level] Unexpected value found. Valid values are [\"PUBLIC\", \"PROJECT\", \"RESTRICTED\"].",
+      "access_level: required or invalid value"
+    ]
+  },
+  {
+    "test_case": "P3_VALID",
+    "native_session": "ff00351a-ab58-4d26-a62d-8664232d90f6",
+    "review": "PASS",
+    "native_error_descriptions": [],
+    "adapter_response": {
+      "conforms": true,
+      "errors": [],
+      "engine": "jsonschema-4.26.0",
+      "input_sha256": "52bc14f0520714bbf30957eec70ad3024dd6670c191fc07ffb664324f6cf17b6",
+      "rule_sha256": "3d3ee2d8a6a5ba3dd8c339e61dc92656af7b51a4557f77decd365ae8f0e77916"
+    }
+  },
+  {
+    "test_case": "P3_INVALID",
+    "native_session": "fd0e403a-c1c1-4b4b-874c-ee4df738268e",
+    "review": "PASS",
+    "native_error_descriptions": [],
+    "adapter_response": {
+      "conforms": false,
+      "errors": [
+        {
+          "path": "$",
+          "keyword": "additionalProperties",
+          "message": "Additional properties are not allowed ('script' was unexpected)"
+        },
+        {
+          "path": "$.smoothing_window",
+          "keyword": "enum",
+          "message": "99 is not one of [1, 3, 5]"
+        }
+      ],
+      "engine": "jsonschema-4.26.0",
+      "input_sha256": "9c1cc701cfcd3da5535795882b4dc64476cc314c036ee973ce078ec4345e6b53",
+      "rule_sha256": "3d3ee2d8a6a5ba3dd8c339e61dc92656af7b51a4557f77decd365ae8f0e77916"
+    }
+  },
+  {
+    "test_case": "P4_VALID_FIXTURE",
+    "native_session": "c4a25c3e-34aa-408b-a664-0384bb8ab79d",
+    "review": "PASS",
+    "native_error_descriptions": []
+  },
+  {
+    "test_case": "P4_LEAK",
+    "native_session": "aa3d237f-9bd2-4d14-b853-493d71694074",
+    "review": "PASS",
+    "native_error_descriptions": [
+      "Property 'records' not defined in the schema and additional properties are not allowed."
+    ]
+  }
+]

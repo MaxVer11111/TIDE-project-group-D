@@ -1,0 +1,287 @@
+[
+  {
+    "input": "metadata\\p1-invalid-access.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": false,
+    "input_sha256": "9551abaad57587ea95330c5db58b7806e315c8c66ef7533d910bf25d62ee6b32",
+    "errors": [
+      {
+        "path": "$.access_level",
+        "keyword": "enum",
+        "message": "'EVERYONE' is not one of ['PUBLIC', 'PROJECT', 'RESTRICTED']",
+        "schema_path": [
+          "properties",
+          "access_level",
+          "enum"
+        ]
+      }
+    ],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": false,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-invalid-access.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": false,
+    "input_sha256": "9551abaad57587ea95330c5db58b7806e315c8c66ef7533d910bf25d62ee6b32",
+    "target_count": 1,
+    "errors": [
+      {
+        "focus_node": "urn:tide:resource:p1:v1",
+        "path": "https://example.invalid/tide/vocab#access_level",
+        "message": "access_level: required or invalid value",
+        "constraint": "http://www.w3.org/ns/shacl#InConstraintComponent"
+      }
+    ],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": false,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-missing-rights.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": false,
+    "input_sha256": "12523dc471ed37757f89f03323c0b2f40cf5c319642f666cb270a28ca7429cdd",
+    "errors": [
+      {
+        "path": "$",
+        "keyword": "required",
+        "message": "'rights_holder' is a required property",
+        "schema_path": [
+          "required"
+        ]
+      }
+    ],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": false,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-missing-rights.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": false,
+    "input_sha256": "12523dc471ed37757f89f03323c0b2f40cf5c319642f666cb270a28ca7429cdd",
+    "target_count": 1,
+    "errors": [
+      {
+        "focus_node": "urn:tide:resource:p1:v1",
+        "path": "https://example.invalid/tide/vocab#rights_holder",
+        "message": "rights_holder: required or invalid value",
+        "constraint": "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      }
+    ],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": false,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-missing-source.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": false,
+    "input_sha256": "e24567c19b8795b5252b483e2c21b71647639403dfc190b6d82c9985f752a65e",
+    "errors": [
+      {
+        "path": "$",
+        "keyword": "required",
+        "message": "'source' is a required property",
+        "schema_path": [
+          "required"
+        ]
+      }
+    ],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": false,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-missing-source.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": false,
+    "input_sha256": "e24567c19b8795b5252b483e2c21b71647639403dfc190b6d82c9985f752a65e",
+    "target_count": 1,
+    "errors": [
+      {
+        "focus_node": "urn:tide:resource:p1:v1",
+        "path": "https://example.invalid/tide/vocab#source",
+        "message": "source: required or invalid value",
+        "constraint": "http://www.w3.org/ns/shacl#MinCountConstraintComponent"
+      }
+    ],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": false,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-valid.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "input_sha256": "4cf910f53d73be466f86bd84ab7a9688936c2c004c51f535f45d0123a049396d",
+    "errors": [],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p1-valid.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": true,
+    "input_sha256": "4cf910f53d73be466f86bd84ab7a9688936c2c004c51f535f45d0123a049396d",
+    "target_count": 1,
+    "errors": [],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p2-valid.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "input_sha256": "b6ba5c7f963b6c1bd01a971e2e82a7f446c13b196605c981987191ec8003d19d",
+    "errors": [],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p2-valid.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": true,
+    "input_sha256": "b6ba5c7f963b6c1bd01a971e2e82a7f446c13b196605c981987191ec8003d19d",
+    "target_count": 1,
+    "errors": [],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p3-valid.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "input_sha256": "28fb877de53c1cf60281f149e7f74ad897db02a5078a2fb128e030e5b122a840",
+    "errors": [],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p3-valid.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": true,
+    "input_sha256": "28fb877de53c1cf60281f149e7f74ad897db02a5078a2fb128e030e5b122a840",
+    "target_count": 1,
+    "errors": [],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p4-valid.jsonld",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "input_sha256": "531f1cb3f23461ef07f9cfcdcf3523de24ece6bf5a834a01de88c25f3f23a202",
+    "errors": [],
+    "rule_sha256": "15b5e0ed0f123944490eb60555ae21620ccb803726310790c931822ca5f82d84",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "metadata\\p4-valid.jsonld",
+    "engine": "SHACL",
+    "expected_conforms": true,
+    "input_sha256": "531f1cb3f23461ef07f9cfcdcf3523de24ece6bf5a834a01de88c25f3f23a202",
+    "target_count": 1,
+    "errors": [],
+    "rule_sha256": "b91fb17fbce958f2e8525e24670ae9b25e57368d9df5ad6fec9824b4885e472f",
+    "actual_conforms": true,
+    "status": "PASS"
+  },
+  {
+    "input": "examples/recipe-valid.json",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "actual_conforms": true,
+    "errors": [],
+    "input_sha256": "52bc14f0520714bbf30957eec70ad3024dd6670c191fc07ffb664324f6cf17b6",
+    "rule_sha256": "3d3ee2d8a6a5ba3dd8c339e61dc92656af7b51a4557f77decd365ae8f0e77916",
+    "status": "PASS"
+  },
+  {
+    "input": "examples/recipe-invalid.json",
+    "engine": "JSONSchema",
+    "expected_conforms": false,
+    "actual_conforms": false,
+    "errors": [
+      {
+        "path": "$",
+        "keyword": "additionalProperties",
+        "message": "Additional properties are not allowed ('script' was unexpected)",
+        "schema_path": [
+          "additionalProperties"
+        ]
+      },
+      {
+        "path": "$.smoothing_window",
+        "keyword": "enum",
+        "message": "99 is not one of [1, 3, 5]",
+        "schema_path": [
+          "properties",
+          "smoothing_window",
+          "enum"
+        ]
+      }
+    ],
+    "input_sha256": "9c1cc701cfcd3da5535795882b4dc64476cc314c036ee973ce078ec4345e6b53",
+    "rule_sha256": "3d3ee2d8a6a5ba3dd8c339e61dc92656af7b51a4557f77decd365ae8f0e77916",
+    "status": "PASS"
+  },
+  {
+    "input": "examples/result-valid-fixture.json",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "actual_conforms": true,
+    "errors": [],
+    "input_sha256": "bcb7c3a1e986920636823877ac909d9300518e2dc9f0c90ac60e7c7d4488778f",
+    "rule_sha256": "dbc5a37d84b86d709601c0efd23136e069861e8d61ec4e15982a0dddb22a72f5",
+    "status": "PASS"
+  },
+  {
+    "input": "examples/result-invalid-leak.json",
+    "engine": "JSONSchema",
+    "expected_conforms": false,
+    "actual_conforms": false,
+    "errors": [
+      {
+        "path": "$",
+        "keyword": "additionalProperties",
+        "message": "Additional properties are not allowed ('records' was unexpected)",
+        "schema_path": [
+          "additionalProperties"
+        ]
+      }
+    ],
+    "input_sha256": "ec5a22ad267e5b7e74f0baa33b03c8ad578c83be8feda8ede2cc474335f22bb6",
+    "rule_sha256": "dbc5a37d84b86d709601c0efd23136e069861e8d61ec4e15982a0dddb22a72f5",
+    "status": "PASS"
+  },
+  {
+    "input": "examples/grant-active.json",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "actual_conforms": true,
+    "errors": [],
+    "input_sha256": "879252786ee2ea618460236642c11e3520f9f3b973f0e6043361722c8a1a36ed",
+    "rule_sha256": "87340f55a77dc3b10492bc63d6122f961f3cf53d7db13d41f51fcf7b4c4542bb",
+    "status": "PASS"
+  },
+  {
+    "input": "examples/grant-revoked.json",
+    "engine": "JSONSchema",
+    "expected_conforms": true,
+    "actual_conforms": true,
+    "errors": [],
+    "input_sha256": "06993c3fc9cd61716a0e0d6763b8f2948c7b25ab5d67a6b76daf3c2a1f9e48bb",
+    "rule_sha256": "87340f55a77dc3b10492bc63d6122f961f3cf53d7db13d41f51fcf7b4c4542bb",
+    "status": "PASS"
+  }
+]

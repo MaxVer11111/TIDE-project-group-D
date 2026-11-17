@@ -1,0 +1,21 @@
+{
+  "completed": false,
+  "errors": [
+    {
+      "description": "[TDL-127] Test case [P3_VALID] defines a send step without referencing the 'from' actor. This is allowed only when the test case defines a single simulated actor.",
+      "location": "/testCases/P3_VALID.xml"
+    },
+    {
+      "description": "[TDL-042] Test case [P3_VALID] in step verify defines an invalid expression [$validateHttp{response}{status} = 200]. Cause: [Cannot compare xs:string to xs:integer].",
+      "location": "/testCases/P3_VALID.xml"
+    },
+    {
+      "description": "[TDL-127] Test case [P3_INVALID] defines a send step without referencing the 'from' actor. This is allowed only when the test case defines a single simulated actor.",
+      "location": "/testCases/P3_INVALID.xml"
+    },
+    {
+      "description": "[TDL-042] Test case [P3_INVALID] in step verify defines an invalid expression [$validateHttp{response}{status} = 200]. Cause: [Cannot compare xs:string to xs:integer].",
+      "location": "/testCases/P3_INVALID.xml"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+name: tide-d-w1w4
+services:
+  validator-bridge:
+    build: ./validator-bridge
+    volumes:
+      - ../inputs/schemas:/rules:ro
+      - ../证据/validator-bridge:/evidence
+  gitb-redis:
+    image: isaitb/gitb-redis
+  gitb-mysql:
+    image: isaitb/gitb-mysql
+    volumes:
+      - dbdata:/var/lib/mysql
+    healthcheck:
+      test: /usr/bin/mysql --user=root --password=$$MYSQL_ROOT_PASSWORD --execute "SHOW DATABASES;"
+      interval: 3s
+      retries: 50
+  gitb-srv:
+    image: isaitb/gitb-srv:1.30.3
+    environment:
+      CALLBACK_ROOT_URL: http://localhost:18080/itbsrv
+    ports:
+      - "127.0.0.1:18080:8080"
+  gitb-ui:
+    image: isaitb/gitb-ui:1.30.3
+    environment:
+      THEME: ec
+    ports:
+      - "127.0.0.1:19000:9000"
+    volumes:
+      - repo:/gitb-repository
+    depends_on:
+      gitb-redis:
+        condition: service_started
+      gitb-mysql:
+        condition: service_healthy
+      gitb-srv:
+        condition: service_started
+volumes:
+  repo:
+  dbdata:

@@ -1,0 +1,22 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix tide: <https://example.invalid/tide/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+[] a sh:ValidationReport ;
+    sh:conforms false ;
+    sh:result [ a sh:ValidationResult ;
+            sh:focusNode <urn:tide:resource:p1:v1> ;
+            sh:resultMessage "access_level: required or invalid value" ;
+            sh:resultPath tide:access_level ;
+            sh:resultSeverity sh:Violation ;
+            sh:sourceConstraintComponent sh:InConstraintComponent ;
+            sh:sourceShape [ sh:datatype xsd:string ;
+                    sh:in ( "PUBLIC" "PROJECT" "RESTRICTED" ) ;
+                    sh:maxCount 1 ;
+                    sh:message "access_level: required or invalid value" ;
+                    sh:minCount 1 ;
+                    sh:minLength 1 ;
+                    sh:path tide:access_level ] ;
+            sh:value "EVERYONE" ] .
+

@@ -1,0 +1,32 @@
+{
+  "completed": true,
+  "identifiers": {
+    "testSuite": "TIDE_D_W1W4",
+    "testCases": [
+      "P1_VALID",
+      "P1_MISSING_RIGHTS",
+      "P1_MISSING_SOURCE",
+      "P1_BAD_ACCESS",
+      "P3_VALID",
+      "P3_INVALID",
+      "P4_VALID_FIXTURE",
+      "P4_LEAK"
+    ],
+    "specifications": [
+      {
+        "name": "TIDE supplied fixtures 1.0.0",
+        "identifier": "[REDACTED]",
+        "actors": [
+          {
+            "name": "TIDEProvider",
+            "identifier": "A70F5C57XC3BEX40A5X83EBXBD4CEBE5BAC0"
+          },
+          {
+            "name": "TestDriver",
+            "identifier": "0FA08640XCD8DX43B5XB747XEAB58BEF2633"
+          }
+        ]
+      }
+    ]
+  }
+}

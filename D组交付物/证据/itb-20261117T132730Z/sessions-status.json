@@ -1,0 +1,94 @@
+{
+  "sessions": [
+    {
+      "session": "1d2f9b94-8920-4abe-8e25-32960c6f9aee",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:32",
+      "endTime": "17/11/2026 13:27:34",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P1_MISSING_SOURCE\">\n   <metadata>\n      <ns2:name>P1_MISSING_SOURCE</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>1d2f9b94-8920-4abe-8e25-32960c6f9aee</sessionId>\n   <startTime>2026-11-17T13:27:32.000Z</startTime>\n   <endTime>2026-11-17T13:27:34.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.429Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>Missing required property 'source'.</description>\n                  <location>json:1:0</location>\n               </error>\n            </reports>\n         </report>\n      </step>\n      <step id=\"2\">\n         <description>Step 2: Fixture SHACL validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"SHACL validation\"\n                 id=\"2\">\n            <date>2026-11-17T13:27:33.292Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>source: required or invalid value</description>\n                  <location>[Focus node] - [urn:tide:resource:p1:v1] - [Result path] - [https://example.invalid/tide/vocab#source]</location>\n               </error>\n            </reports>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "2816551d-d969-4969-b986-c469ae42ace6",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:33",
+      "endTime": "17/11/2026 13:27:33",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P3_VALID\">\n   <metadata>\n      <ns2:name>P3_VALID</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>2816551d-d969-4969-b986-c469ae42ace6</sessionId>\n   <startTime>2026-11-17T13:27:33.000Z</startTime>\n   <endTime>2026-11-17T13:27:33.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.690Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>0</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "31e8a09d-4362-4598-8faf-1e46fcba3f04",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:33",
+      "endTime": "17/11/2026 13:27:33",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P4_LEAK\">\n   <metadata>\n      <ns2:name>P4_LEAK</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>31e8a09d-4362-4598-8faf-1e46fcba3f04</sessionId>\n   <startTime>2026-11-17T13:27:33.000Z</startTime>\n   <endTime>2026-11-17T13:27:33.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.960Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>Property 'records' not defined in the schema and additional properties are not allowed.</description>\n                  <location>json:1:0</location>\n               </error>\n            </reports>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "7665e47b-a920-4d05-9fb6-44972410d495",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:32",
+      "endTime": "17/11/2026 13:27:34",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P1_VALID\">\n   <metadata>\n      <ns2:name>P1_VALID</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>7665e47b-a920-4d05-9fb6-44972410d495</sessionId>\n   <startTime>2026-11-17T13:27:32.000Z</startTime>\n   <endTime>2026-11-17T13:27:34.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.316Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>0</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n         </report>\n      </step>\n      <step id=\"2\">\n         <description>Step 2: Fixture SHACL validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"SHACL validation\"\n                 id=\"2\">\n            <date>2026-11-17T13:27:33.292Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>0</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "8a958623-1482-49e4-8459-f007ecc9ee94",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:33",
+      "endTime": "17/11/2026 13:27:33",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P4_VALID_FIXTURE\">\n   <metadata>\n      <ns2:name>P4_VALID_FIXTURE</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>8a958623-1482-49e4-8459-f007ecc9ee94</sessionId>\n   <startTime>2026-11-17T13:27:33.000Z</startTime>\n   <endTime>2026-11-17T13:27:33.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.913Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>0</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "94f4bb46-1261-489b-84d2-d8dc5a3019d9",
+      "result": "FAILURE",
+      "startTime": "17/11/2026 13:27:33",
+      "endTime": "17/11/2026 13:27:33",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:32] ERROR - Unexpected error - step [Fixture JSON Schema validation] - ID [1]",
+        "\t[IllegalArgument]: JsonNode does not contain the location information.",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [ERROR]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P3_INVALID\">\n   <metadata>\n      <ns2:name>P3_INVALID</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>94f4bb46-1261-489b-84d2-d8dc5a3019d9</sessionId>\n   <startTime>2026-11-17T13:27:33.000Z</startTime>\n   <endTime>2026-11-17T13:27:33.000Z</endTime>\n   <result>FAILURE</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.831Z</date>\n            <result>FAILURE</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>JsonNode does not contain the location information.</description>\n               </error>\n            </reports>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "94feac33-d9f9-466a-81fc-1aca24790f90",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:32",
+      "endTime": "17/11/2026 13:27:34",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P1_BAD_ACCESS\">\n   <metadata>\n      <ns2:name>P1_BAD_ACCESS</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>94feac33-d9f9-466a-81fc-1aca24790f90</sessionId>\n   <startTime>2026-11-17T13:27:32.000Z</startTime>\n   <endTime>2026-11-17T13:27:34.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.557Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>[/access_level] Unexpected value found. Valid values are [\"PUBLIC\", \"PROJECT\", \"RESTRICTED\"].</description>\n                  <location>json:45:0</location>\n               </error>\n            </reports>\n         </report>\n      </step>\n      <step id=\"2\">\n         <description>Step 2: Fixture SHACL validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"SHACL validation\"\n                 id=\"2\">\n            <date>2026-11-17T13:27:33.292Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>access_level: required or invalid value</description>\n                  <location>[Focus node] - [urn:tide:resource:p1:v1] - [Result path] - [https://example.invalid/tide/vocab#access_level]</location>\n                  <test>[Value] - [EVERYONE]</test>\n               </error>\n            </reports>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    },
+    {
+      "session": "d6f2dda7-7236-47c7-9ee0-228ea02bf357",
+      "result": "SUCCESS",
+      "startTime": "17/11/2026 13:27:32",
+      "endTime": "17/11/2026 13:27:34",
+      "logs": [
+        "[2026-11-17 13:27:32] INFO  - Starting session",
+        "[2026-11-17 13:27:33] INFO  - Session finished with result [COMPLETED]"
+      ],
+      "report": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<TestCaseOverviewReport xmlns=\"http://www.gitb.com/tr/v1/\"\n                        xmlns:ns2=\"http://www.gitb.com/core/v1/\"\n                        xmlns:ns3=\"http://www.gitb.com/tbs/v1/\"\n                        id=\"P1_MISSING_RIGHTS\">\n   <metadata>\n      <ns2:name>P1_MISSING_RIGHTS</ns2:name>\n      <ns2:version>1.0.0</ns2:version>\n      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>\n   </metadata>\n   <sessionId>d6f2dda7-7236-47c7-9ee0-228ea02bf357</sessionId>\n   <startTime>2026-11-17T13:27:32.000Z</startTime>\n   <endTime>2026-11-17T13:27:34.000Z</endTime>\n   <result>SUCCESS</result>\n   <steps>\n      <step id=\"1\">\n         <description>Step 1: Fixture JSON Schema validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"JSON validation\"\n                 id=\"1\">\n            <date>2026-11-17T13:27:32.321Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>Missing required property 'rights_holder'.</description>\n                  <location>json:1:0</location>\n               </error>\n            </reports>\n         </report>\n      </step>\n      <step id=\"2\">\n         <description>Step 2: Fixture SHACL validation</description>\n         <report xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n                 xsi:type=\"TAR\"\n                 name=\"SHACL validation\"\n                 id=\"2\">\n            <date>2026-11-17T13:27:33.292Z</date>\n            <result>SUCCESS</result>\n            <counters>\n               <nrOfAssertions>0</nrOfAssertions>\n               <nrOfErrors>1</nrOfErrors>\n               <nrOfWarnings>0</nrOfWarnings>\n            </counters>\n            <reports>\n               <error xsi:type=\"BAR\">\n                  <description>rights_holder: required or invalid value</description>\n                  <location>[Focus node] - [urn:tide:resource:p1:v1] - [Result path] - [https://example.invalid/tide/vocab#rights_holder]</location>\n               </error>\n            </reports>\n         </report>\n      </step>\n   </steps>\n</TestCaseOverviewReport>\n"
+    }
+  ]
+}

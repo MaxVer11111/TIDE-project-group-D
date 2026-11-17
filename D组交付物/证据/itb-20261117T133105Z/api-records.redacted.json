@@ -1,0 +1,68 @@
+[
+  {
+    "method": "PUT",
+    "path": "/domain",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/community",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/specification",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/organisation",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "PUT",
+    "path": "/system",
+    "status": 200,
+    "response": {
+      "apiKey": "[REDACTED]"
+    }
+  },
+  {
+    "method": "POST",
+    "path": "/testsuite/deploy",
+    "status": 200,
+    "response": {
+      "completed": false,
+      "errors": [
+        {
+          "description": "[TDL-127] Test case [P3_VALID] defines a send step without referencing the 'from' actor. This is allowed only when the test case defines a single simulated actor.",
+          "location": "/testCases/P3_VALID.xml"
+        },
+        {
+          "description": "[TDL-042] Test case [P3_VALID] in step verify defines an invalid expression [$validateHttp{response}{status} = 200]. Cause: [Cannot compare xs:string to xs:integer].",
+          "location": "/testCases/P3_VALID.xml"
+        },
+        {
+          "description": "[TDL-127] Test case [P3_INVALID] defines a send step without referencing the 'from' actor. This is allowed only when the test case defines a single simulated actor.",
+          "location": "/testCases/P3_INVALID.xml"
+        },
+        {
+          "description": "[TDL-042] Test case [P3_INVALID] in step verify defines an invalid expression [$validateHttp{response}{status} = 200]. Cause: [Cannot compare xs:string to xs:integer].",
+          "location": "/testCases/P3_INVALID.xml"
+        }
+      ]
+    }
+  }
+]

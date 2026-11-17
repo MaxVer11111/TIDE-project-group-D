@@ -1,0 +1,28 @@
+{
+  "completed": true,
+  "identifiers": {
+    "testSuite": "TIDE_D_W1W4",
+    "testCases": [
+      "P1_VALID",
+      "P1_MISSING_RIGHTS",
+      "P1_MISSING_SOURCE",
+      "P1_BAD_ACCESS",
+      "P3_VALID",
+      "P3_INVALID",
+      "P4_VALID_FIXTURE",
+      "P4_LEAK"
+    ],
+    "specifications": [
+      {
+        "name": "TIDE supplied fixtures 1.0.0",
+        "identifier": "[REDACTED]",
+        "actors": [
+          {
+            "name": "TIDEProvider",
+            "identifier": "D0265119XD55EX49A7XBF37X6BF87CC79C45"
+          }
+        ]
+      }
+    ]
+  }
+}

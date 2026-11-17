@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseOverviewReport xmlns="http://www.gitb.com/tr/v1/"
+                        xmlns:ns2="http://www.gitb.com/core/v1/"
+                        xmlns:ns3="http://www.gitb.com/tbs/v1/"
+                        id="P1_MISSING_SOURCE">
+   <metadata>
+      <ns2:name>P1_MISSING_SOURCE</ns2:name>
+      <ns2:version>1.0.1</ns2:version>
+      <ns2:description>Supplied synthetic fixture only. No real identity or transfer. Negative reports require reason review.</ns2:description>
+   </metadata>
+   <sessionId>ad2df6cc-f054-4563-9aa4-776338d0ff41</sessionId>
+   <startTime>2026-11-17T13:34:29.000Z</startTime>
+   <endTime>2026-11-17T13:34:30.000Z</endTime>
+   <result>SUCCESS</result>
+   <steps>
+      <step id="1">
+         <description>Step 1: Fixture JSON Schema validation</description>
+         <report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:type="TAR"
+                 name="JSON validation"
+                 id="1">
+            <date>2026-11-17T13:34:29.030Z</date>
+            <result>SUCCESS</result>
+            <counters>
+               <nrOfAssertions>0</nrOfAssertions>
+               <nrOfErrors>1</nrOfErrors>
+               <nrOfWarnings>0</nrOfWarnings>
+            </counters>
+            <reports>
+               <error xsi:type="BAR">
+                  <description>Missing required property 'source'.</description>
+                  <location>json:1:0</location>
+               </error>
+            </reports>
+         </report>
+      </step>
+      <step id="2">
+         <description>Step 2: Fixture SHACL validation</description>
+         <report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:type="TAR"
+                 name="SHACL validation"
+                 id="2">
+            <date>2026-11-17T13:34:29.059Z</date>
+            <result>SUCCESS</result>
+            <counters>
+               <nrOfAssertions>0</nrOfAssertions>
+               <nrOfErrors>1</nrOfErrors>
+               <nrOfWarnings>0</nrOfWarnings>
+            </counters>
+            <reports>
+               <error xsi:type="BAR">
+                  <description>source: required or invalid value</description>
+                  <location>[Focus node] - [urn:tide:resource:p1:v1] - [Result path] - [https://example.invalid/tide/vocab#source]</location>
+               </error>
+            </reports>
+         </report>
+      </step>
+   </steps>
+</TestCaseOverviewReport>
